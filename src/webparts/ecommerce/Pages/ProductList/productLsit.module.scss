@@ -1,0 +1,37 @@
+@import "~@fluentui/react/dist/sass/References.scss";
+
+.productList {
+  display: flex;
+  gap: 2rem;
+  height: 100%;
+  overflow-y: scroll;
+  .sidebar {
+      overflow: auto;
+      height: 100%;
+
+      .menu {
+          .submenu {
+              display: flex;
+              flex-direction: column;
+              border-bottom: 1px solid #dee2e7;
+              .menuItem {
+                  font-size: 14px;
+                  .catagoryCheckbox {
+                      margin-right: 2rem;
+                  }
+              }
+          }
+      }
+  }
+  .filterBtn {
+      border: none;
+      border-radius: 5px;
+      background-color: #054e5a;
+      color: #fff;
+      padding: 0.8rem;
+      width: 100%;
+      font-size: 1rem;
+      letter-spacing: 1px;
+      cursor: pointer;
+  }
+}

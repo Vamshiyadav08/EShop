@@ -1,0 +1,220 @@
+@import "~@fluentui/react/dist/sass/References.scss";
+
+.home {
+  .banner {
+    margin: 2rem;
+  
+    .slider {
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+      margin: 1px;
+      padding: 1rem;
+      padding: 2rem;
+    background: #fff;
+      .bannerImg {
+        height: 300px;
+        width: 100%;
+      }
+    }
+
+    .sectionSale {
+      background-color: #fff;
+      margin: 2rem 1rem;
+      display: flex;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+        rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+      gap: 2rem;
+      @media (max-width: 1000px) {
+        display: flex;
+        flex-direction: column;
+        
+     }
+      .countDown {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        border-right: 1px solid #e0e0e0;
+        padding: 1rem;
+        @media (max-width: 1000px) {
+          align-items: center;
+          
+       }
+
+        .dealsStrongText {
+          font-weight: 700;
+          color: #1c1c1c;
+        }
+
+        .dealsLightText {
+          font-weight: 600;
+          color: #8b96a5;
+        }
+
+        .groupTime {
+          display: flex;
+          gap: 5px;
+
+          .group {
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            height: 50px;
+            width: 45px;
+            background-color: #606060;
+          }
+        }
+      }
+
+      .catagoryItemSection {
+        background-color: #fff;
+        display: flex;
+       flex-wrap: wrap;
+        justify-content: center;
+        padding: 1rem;
+        @media (max-width: 1000px) {
+          display: flex;
+          flex-wrap: wrap;
+          
+       }
+        .catagoryItems {
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+          border-right: 1px solid #e0e0e0;
+          padding: 1.5rem;
+
+          .catagoryItemImg {
+            height: 80px;
+            width: 80px;
+          }
+
+          .Items {
+            align-items: center;
+            font-weight: 600;
+            .discountBadge {
+              margin-top: 5px;
+              display: grid;
+              place-items: center;
+              border-radius: 5px;
+              width: 60px;
+              height: 28px;
+              color: #eb001b;
+              background-color: #ffe3e3;
+            }
+          }
+        }
+      }
+    }
+
+    .electronicGroupItems {
+      display: flex;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+        rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+      margin: 1rem;
+
+      background-color: #fff;
+      @media (max-width: 1000px) {
+        display: flex;
+        flex-direction: column;
+
+     }
+      .electronicBgCard {
+        flex-wrap: wrap;
+        font-weight: 700;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        background-image: url(../../assets/bannerElec.png);
+        .button {
+          width: 100px;
+          height: 40px;
+          background-color: #fff;
+          font-weight: 600;
+          border: none;
+          border-radius: 1px;
+        }
+      }
+
+      .groupItems {
+       display: flex;
+       flex-wrap: wrap;
+      margin: 4px;
+      height: 100%;
+      @media (max-width: 1000px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+     }
+        .groupEachItem {
+          text-decoration: none;
+          color: #333;
+          border: 1px solid #e0e0e0;
+         margin: 5px;
+         width: 30%;
+         height: 30%;
+          padding: 5px;
+          font-size: 12px;
+         
+          span{
+            color: #333;
+            font-weight: 600;
+          }
+          .group {
+            display: flex;
+            justify-content: space-between;
+
+            .groupItemImg {
+              width: 70px;
+              height: 70px;
+              
+            }
+          }
+        }
+      }
+    }
+    .enquiry {
+      background-image: url(../../assets/tech/maskgroup.png);
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+        rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+      margin: 1rem;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-around;
+      gap: 1rem;
+      background-color: #fff;
+      @media (max-width: 1100px) {
+        display: flex;
+        flex-direction: column;
+        padding: 3rem;
+     }
+      .enquiryInfo {
+        color: #fff;
+      }
+      .enquiryForm {
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+        background-color: #fff;
+        border-radius: .5rem;
+        padding: 1rem;
+
+        button {
+          width: 128px;
+          height: 40px;
+          background-color: #127FFF;
+          color: #fff;
+          border: none;
+        }
+        input {
+          width: 440px;
+          height: 40px;
+          @media (max-width:900px) {
+            height: 40px;
+          }
+        }
+      }
+    }
+  }
+}

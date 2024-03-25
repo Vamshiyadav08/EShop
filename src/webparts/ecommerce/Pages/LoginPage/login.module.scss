@@ -1,0 +1,71 @@
+@import "~@fluentui/react/dist/sass/References.scss";
+
+.login {
+
+    height: 100vh;
+    position: relative;
+    .loginContainer {
+       background-color: #fff;
+        position: absolute;
+        top: 15%;
+        left: 20%;
+        height: 65%;
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+        .leftWrapper {
+            height: 100%;
+            display: grid;
+            grid-template-rows: 10% 40% auto;
+            width: 30%;
+            background-color: #054e5a;
+            color: #fff;
+            padding: 2rem;
+            overflow: hidden;
+
+            .flipkartImg {
+                align-items: flex-end;
+                width: 84%;
+            }
+        }
+        .rightWrapper {
+            margin-top: 2rem;
+            padding: 2rem;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            .btnContainer {
+                display: flex;
+                flex-direction: column;
+                gap: 2px;
+                margin-top: 1rem;
+                button:nth-child(1) {
+                    background: #fb641b;
+                    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+                    border: none;
+                    color: #fff;
+                    height: 3.4rem;
+                    padding: 1.4rem;
+                    cursor: pointer;
+                }
+
+                button:nth-child(2) {
+                    border: none;
+                }
+            }
+
+            input {
+                height: 2.5rem;
+                border: none;
+                border-bottom:  2px solid #054e5a;
+            }
+
+            input:hover,
+            input:focus {
+                border-bottom: 2px solid #054e5a;
+                outline: none;
+            }
+        }
+    }
+}
+

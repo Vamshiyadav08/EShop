@@ -1,0 +1,63 @@
+@import '~@fluentui/react/dist/sass/References.scss';
+
+.header{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    width: 100%;
+    .navHeader{
+        background-color: #054e5a;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        .navLogo{
+           cursor: pointer;
+        }
+        .search{
+            .searchbar{
+                display: flex;
+                border: 1px solid #054e5a;
+               
+                background-color:#fff;
+                .input{
+                    width: 92%;
+                    border: none;
+                }:hoever,:focus{
+                    border: none;
+                }
+            }
+            .searchResults{
+                z-index: 1;
+                box-shadow: 0 3px 6px -4px #0000001f, 0 6px 16px #00000014, 0 9px 28px 8px #0000000d;
+            p:hover{
+                background-color: #edebe9;
+            cursor: pointer;
+            }
+            }
+        }
+        
+        .navActions{
+            display: flex;
+            gap: 1.5rem;
+            .navActionItems{
+                position: relative;
+                display: flex;
+                
+                align-items: center;
+                color: #fff;
+                gap: 5px;
+                font-weight: 700;
+                text-transform: uppercase;
+                font-size: 1rem;
+                cursor: pointer;
+                .count{
+                    position: absolute;
+                    top: -14px;
+                    right: 55px;
+                    color:yellow;
+                }
+            }
+            
+        }
+    }
+    
+}

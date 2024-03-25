@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "ecommerce-client-side-solution",
+    "id": "43ccd524-3abe-4b72-865b-a306829f6c25",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.18.2"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "Ecommerce description"
+      },
+      "longDescription": {
+        "default": "Ecommerce description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "ecommerce Feature",
+        "description": "The feature that activates elements of the ecommerce solution.",
+        "id": "b73e3beb-36c8-4f37-a7fe-14afe1d3f02a",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/ecommerce.sppkg"
+  }
+}

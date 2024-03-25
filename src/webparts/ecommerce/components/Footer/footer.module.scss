@@ -1,0 +1,24 @@
+.footer{
+    background-color: #172337;
+    display: flex;
+    padding: 1rem;
+    color: #fff;
+    justify-content: space-around;
+    .footerBrand{
+        color: #fff;
+    }
+    .footerItem{
+        padding: 0 1rem;
+        p{
+            font-weight: 700;
+        }
+        ul{
+            margin: 0px;
+            padding: 0px;
+            list-style-type: none;
+            li{
+                padding-top: 3px;
+            }
+        }
+    }
+}

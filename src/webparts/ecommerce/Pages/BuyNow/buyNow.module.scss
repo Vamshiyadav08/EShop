@@ -1,0 +1,59 @@
+@import "~@fluentui/react/dist/sass/References.scss";
+.buyNow {
+    position: relative;
+    margin: 2rem;
+    h3{
+        color: #878787;
+        margin-top: 4px;
+    }
+    .loginInfo,
+    .delivaryInfo,
+    .selectedItems,.checkout {
+        box-shadow: 0px 2px 4px rgb(16 12 12 / 20%);
+        margin-top: 1rem;
+        padding: 1rem;
+        background-color: #fff;
+    }
+    .loginInfo {
+    }
+    .delivaryInfo {
+    }
+    .selectedItemsDetails {
+       
+        display: flex;
+        /* gap: 5rem; */
+        justify-content: space-evenly;
+        border: 1px solid #b8c1bb;
+        padding: 12px;
+        // margin: 6px;
+
+        .img {
+            width: 120px;
+            height: 120px;
+        }
+        .details {
+            .productItemName {
+                color: red;
+            }
+        }
+    }
+    .checkout{
+        display: grid;
+        grid-template-columns: 56% 25% 20%;
+        align-items: center;
+        button {
+        width: 9rem;
+        height: 3rem;
+        background-color: #fb5e10;
+        font-size: 0.875rem;
+        letter-spacing: 0.02857em;
+        padding: 6px 16px;
+        color: #fff;
+        box-shadow: 0 2px 2px 0 rgba(0,0,0,.2);
+        transition: all linear;
+        border: none;
+        cursor: pointer;
+        }
+    }
+    
+}

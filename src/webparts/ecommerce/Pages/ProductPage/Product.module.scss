@@ -1,0 +1,133 @@
+@import "~@fluentui/react/dist/sass/References.scss";
+
+.productPage {
+    background-color: #f7fafc;
+    .productContainer {
+        margin: 1rem;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+        background-color: #fff;
+        background-color: #fff;
+        .products {
+            display: flex;
+            gap: 3rem;
+            @media (max-width: 1100px) {
+               display: flex;
+               flex-direction: column;
+               padding: 3rem;
+            }
+            div {
+                .imageContainer {
+                    display: flex;
+                    padding: 1rem;
+                    align-items: center;
+                    gap: 2rem;
+                    .imageSideBar {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 1rem;
+                        .eachImg {
+                            width: 30px;
+                            height: 48px;
+                            border: 1px solid black;
+                            padding: 1rem;
+                        }
+                    }
+                    .imageSection {
+                        color: red;
+                        .mainImg {
+                            width: 255px;
+                            height: 300px;
+                            box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+                            padding: 1rem;
+                            background-color: #fff;
+                            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+                        }
+                    }
+                }
+                .buttonsContainer {
+                    display: flex;
+                    border: none;
+                    gap: 1rem;
+                    padding: 1rem;
+                    button {
+                        display: flex;
+                        align-items: center;
+                        border: none;
+                        color: #fff;
+                        padding: 0.5rem 1.8rem;
+                        font-weight: 700;
+                        cursor: pointer;
+                    }
+                    .cartBtn {
+                        background-color: #ff9f00;
+                    }
+                    .buyBtn {
+                        background-color: #fb641b;
+                    }
+                }
+            }
+
+            .ProductDetails {
+                .ratingContainer {
+                    display: flex;
+                    align-items: center;
+                    .starIcon {
+                        color: #ff9017;
+                        font-size: 1.5rem;
+                    }
+                    span {
+                        padding: 0 1rem;
+                        color: #787a80;
+                        background-color: #00B517;
+                        color: #fff;
+                        border-radius: 2px;
+                        padding: 5px;
+                        margin: 0px 7px
+                    }
+                }
+                .staticDetails {
+                    .price {
+                        font-weight: bold;
+                        font-size: 1.5rem;
+                    }
+                    p {
+                        margin: 6px;
+                    }
+                }
+                .highlights,
+                .description {
+                    display: grid;
+                    grid-template-columns: 15% 60%;
+                    grid-column-gap: 3rem;
+                    grid-row-gap: 2rem;
+                    padding-top: 1rem;
+                    .itemBox {
+                        margin-right: 1rem;
+                        padding: 0.25rem 0.5rem;
+                        color: rgb(65, 64, 64);
+                        display: inline-block;
+                        width: 60px;
+                        color: #fff;
+                        border-radius: 2px;
+                        text-align: center;
+                        background-color: #054e5a;
+                    }
+                    .highlightsList > li::marker {
+                        margin: 10px 0px;
+                    }
+                    .descriptionLabel {
+                        font-weight: 700;
+                        font-size: 14px;
+                    }
+                    .descriptionItem {
+                        color: #878787;
+                        word-spacing: 5px;
+                        line-height: 1.4;
+                        font-size: .9em;
+                    
+                    }
+                }
+            }
+        }
+    }
+}
